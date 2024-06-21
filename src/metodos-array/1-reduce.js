@@ -6,7 +6,10 @@ const carritos = [
     { nombre: 'Audifonos Razer', precio: 30000 },
     { nombre: 'Monitor Asus', precio: 300000 }
 ];
-const resultadosCarritos = carritos.reduce(function (total, product) {
-    return total + product.precio;
-}, 0);
+//*CON FUNCION TRADICIONAL
+//const resultadosCarritos = carritos.reduce(function(total: number, product: IProductos){
+//    return total + product.precio;
+//}, 0);
+//*ARROW FUNCTIONS O FUNCIONES FLECHAS 
+const resultadosCarritos = carritos.reduce((total, product) => total + product.precio, 0);
 console.log(resultadosCarritos);

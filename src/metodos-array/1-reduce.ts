@@ -12,9 +12,14 @@ const carritos: IProductos [] = [
 { nombre: 'Monitor Asus', precio: 300000 }
 ];
 
+//*CON FUNCION TRADICIONAL
+//const resultadosCarritos = carritos.reduce(function(total: number, product: IProductos){
+//    return total + product.precio;
+//}, 0);
 
-const resultadosCarritos = carritos.reduce(function(total: number, product: IProductos){
-    return total + product.precio;
-}, 0);
+//*ARROW FUNCTIONS O FUNCIONES FLECHAS 
+const resultadosCarritos = carritos.reduce( (total: number, product: IProductos) => total + product.precio, 0);
 
 console.log(resultadosCarritos);
+
+
