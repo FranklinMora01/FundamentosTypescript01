@@ -23,3 +23,15 @@ console.log('ACCEDER A LAS PROPIEDADES DE UN OBJETO CON EL DESTRUCTURE (DESMENUZ
 const { enlace, nombre: nombreYoutube } = sitioWeb.redesSociales.youtube;
 console.log(enlace);
 console.log(nombreYoutube);
+//* puedes acceder de la siguiente forma; los nombres primero, segundo, tercero pueden ser cualquier otro nombre
+const valores = [10, 20, 30];
+const [primero, segundo, tercero] = valores;
+console.log('');
+console.log(primero);
+console.log(segundo);
+console.log(tercero);
+//* si quiero obtener solo el ultimo valos puedo viajar dentro del arreglo de la siguiente forma
+const valoresDos = [10, 20, 30];
+const [, , ultimo] = valores;
+console.log('');
+console.log(ultimo);
